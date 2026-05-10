@@ -1,102 +1,137 @@
-# 1.GITHUM_ASSIGNMENT_MUNNA
+# 2.GITHUM_ASSIGNMENT_MUNNA
+# Git Assignment 2 – Working with Changes & History
 
 ## Objective
-Set up a new Git project and push it to a remote GitHub repository.
 
-# Project Setup Steps
-
-## Step 1: Create Project Folder
-
-<img width="556" height="126" alt="image" src="https://github.com/user-attachments/assets/023fec53-b619-4251-afd6-a4c41fb38e0e" />
+Track code changes and manage commit history using Git commands.
 
 
-## Step 2: Initialize Git Repository
+# Project Path
 
-git init
-
-<img width="734" height="43" alt="image" src="https://github.com/user-attachments/assets/d467e04d-ed63-48c9-8cfb-898e0a83bc1c" />
+C:\Users\Administrator\OneDrive\Desktop\GITHUBASSIGNMENT
 
 
-## Step 3: Create Python File
+# Step 1: Check Git Status
 
-Create a file named `app.py`
-
-<img width="539" height="56" alt="image" src="https://github.com/user-attachments/assets/e7d1a962-1430-4a2f-8eb5-429dc7768f3e" />
-
-
-Add sample Python code:
-
-print("Hello GitHub")
-
-Save and close the file.
-
----
-
-## Step 4: Check Git Status
+Command:
 
 git status
-<img width="506" height="68" alt="image" src="https://github.com/user-attachments/assets/fe61c05e-553e-40de-a95c-73b7f2e47fa2" />
+
+Output:
+
+On branch main
+Changes not staged for commit:
+        modified:   app.py
+
+Untracked files:
+        GITASSIG2
 
 
+# Step 2: Stage All Changes
 
-## Step 5: Stage the File
-
-
-git add app.py
-
-
-Or add all files:
+Command:
 
 git add .
 
 
-## Step 6: Commit the File
-
-git commit -m "Initial commit: add app.py"
-<img width="755" height="51" alt="image" src="https://github.com/user-attachments/assets/2901efa1-64b7-41e5-a172-78e4adcc0d94" />
+Explanation:
+- Adds all modified and new files to staging area
 
 
-## Step 7: Create Remote Repository
+# Step 3: First Commit
 
-Create a repository in GitHub:
+Command:
 
-Repository Name:
-<img width="989" height="50" alt="image" src="https://github.com/user-attachments/assets/42816c56-23f3-42d3-a8cc-55b9eb38396b" />
-
-
-## Step 8: Add Remote Repository
-
-
-git remote add origin https://github.com/munna7844sap-collab/GITHUM_ASSIGNMENT_MUNNA.git
-
-
-
-## Step 9: Verify Remote Configuration
-
-
-git remote -v
+git commit -m "Hello World"
 
 
 Output:
 
-origin  https://github.com/munna7844sap-collab/GITHUM_ASSIGNMENT_MUNNA.git (fetch)
-origin  https://github.com/munna7844sap-collab/GITHUM_ASSIGNMENT_MUNNA.git (push)
-
-<img width="591" height="59" alt="image" src="https://github.com/user-attachments/assets/7da10f81-6c1d-4ccd-94a0-7cc3e0732cc4" />
-
-
-## Step 10: Push Code to GitHub
+[main bbf00e5] Hello World
+ 2 files changed, 9 insertions(+), 1 deletion(-)
+ create mode 100644 GITASSIG2
 
 
-git push -u origin main
+# Step 4: Make Another Change
+
+Modified `app.py` again by adding:
+
+
+print("Good Morning Everyone")
+
+
+# Step 5: Stage Updated Changes
+
+Command:
+
+git add .
+
+
+
+# Step 6: Second Commit
+
+Command:
+
+git commit -m "added Good Morning Everyone"
+
+Output:
+
+[main 81b7987] added Good Morning Everyone
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+
+# Step 7: View Full Commit History
+
+Command:
+
+git log
+
+
+Output:
+
+commit 81b79878b3f9e4fc63e5f95acf4a762cd793ffff
+Author: munna7844sap-collab <munna7844sap@gmail.com>
+
+    added Good Morning Everyone
+
+commit bbf00e5f628d600b3eed9f61af91e334ce0b7cf1
+
+    Hello World
+
+
+
+# Step 8: View Compact One-Line History
+
+Command:
+
+git log --oneline
+
+
+Output:
+
+81b7987 added Good Morning Everyone
+bbf00e5 Hello World
+88b9d31 Initial commit: add app.py with basic Python code
+
+Explanation:
+- Displays short commit history in one line format
+
+
 
 
 # Conclusion
 
-Successfully initialized a Git repository, committed project files, connected to GitHub remote repository, and pushed the project to GitHub.
+Successfully:
+- Modified project files
+- Checked file changes
+- Staged changes
+- Created multiple commits
+- Viewed detailed and compact commit history
 
+<img width="776" height="618" alt="image" src="https://github.com/user-attachments/assets/f2d8aaa2-475b-4338-8c82-5844c1548b4c" />
 
+<img width="569" height="102" alt="image" src="https://github.com/user-attachments/assets/e4ffe105-cf95-49f9-b12f-f3558f8662f3" />
 
-<img width="1343" height="635" alt="image" src="https://github.com/user-attachments/assets/cbb75027-51df-4880-bacf-f950ff3065c1" />
+<img width="1365" height="668" alt="image" src="https://github.com/user-attachments/assets/10e5b728-8cb5-4874-ab3a-a4501069c5df" />
 
 
