@@ -1,137 +1,177 @@
-# 2.GITHUM_ASSIGNMENT_MUNNA
-# Git Assignment 2 – Working with Changes & History
+# 3.GITHUM_ASSIGNMENT_MUNNA
+# Git Branching & Feature Development
 
 ## Objective
-
-Track code changes and manage commit history using Git commands.
-
-
-# Project Path
-
-C:\Users\Administrator\OneDrive\Desktop\GITHUBASSIGNMENT
+Work with Git branches and manage feature development separately from the main branch.
 
 
-# Step 1: Check Git Status
+# Project Details
 
-Command:
+Project Name: GITHUBASSIGNMENT
+
+Main File: `app.py`
+
+
+# Tasks Performed
+
+## 1. Checked Existing Branch
+
+git branch
+
+Output:
+
+* main
+
+
+## 2. Created a New Branch
+
+
+git branch feature-update
+
+
+## 3. Switched to Feature Branch
+
+git checkout feature-update
+
+
+Output:
+
+Switched to branch 'feature-update'
+
+
+## 4. Verified Current Branch
+
+git branch
+
+Output:
+
+* feature-update
+  main
+
+## 5. Modified `app.py`
+
+Added new feature logic inside the application.
+
+Example:
+
+print("Welcome to GitHub Assignment")
+
+def new_feature():
+    print("New Feature Added Successfully")
+
+new_feature()
+
+<img width="837" height="260" alt="image" src="https://github.com/user-attachments/assets/b4b28032-85eb-4276-893a-70edc26a9f5b" />
+
+
+## 6. Checked Git Status
+
 
 git status
 
-Output:
+Output showed modified file:
 
-On branch main
-Changes not staged for commit:
-        modified:   app.py
-
-Untracked files:
-        GITASSIG2
+modified: app.py
 
 
-# Step 2: Stage All Changes
 
-Command:
-
-git add .
-
-
-Explanation:
-- Adds all modified and new files to staging area
-
-
-# Step 3: First Commit
-
-Command:
-
-git commit -m "Hello World"
-
-
-Output:
-
-[main bbf00e5] Hello World
- 2 files changed, 9 insertions(+), 1 deletion(-)
- create mode 100644 GITASSIG2
-
-
-# Step 4: Make Another Change
-
-Modified `app.py` again by adding:
-
-
-print("Good Morning Everyone")
-
-
-# Step 5: Stage Updated Changes
-
-Command:
+## 7. Staged Changes
 
 git add .
 
 
 
-# Step 6: Second Commit
+## 8. Committed Changes
 
-Command:
-
-git commit -m "added Good Morning Everyone"
-
-Output:
-
-[main 81b7987] added Good Morning Everyone
- 1 file changed, 2 insertions(+), 1 deletion(-)
-
-
-# Step 7: View Full Commit History
-
-Command:
-
-git log
+git commit -m "Added new feature logic"
 
 
 Output:
 
-commit 81b79878b3f9e4fc63e5f95acf4a762cd793ffff
-Author: munna7844sap-collab <munna7844sap@gmail.com>
-
-    added Good Morning Everyone
-
-commit bbf00e5f628d600b3eed9f61af91e334ce0b7cf1
-
-    Hello World
+[feature-update 9d96677] Added new feature logic
 
 
+## 9. Switched Back to Main Branch
 
-# Step 8: View Compact One-Line History
 
-Command:
+git checkout main
+
+
+## 10. Merged Feature Branch into Main
+
+git merge feature-update
+
+Output:
+
+Updating 81b7987..9d96677
+Fast-forward
+
+
+## 11. Verified Commit History
+
 
 git log --oneline
 
 
 Output:
 
+9d96677 Added new feature logic
 81b7987 added Good Morning Everyone
 bbf00e5 Hello World
-88b9d31 Initial commit: add app.py with basic Python code
+88b9d31 Initial commit
 
-Explanation:
-- Displays short commit history in one line format
 
+
+## 12. Deleted Feature Branch Safely
+
+git branch -d feature-update
+
+Output:
+
+
+Deleted branch feature-update
+
+
+# Dummy Branch Practice
+
+## 13. Created Dummy Branch
+
+
+git branch dummy-branch
+
+
+## 14. Added Dummy Commit
+
+git add .
+git commit -m "Dummy branch commit"
+
+
+
+## 15. Deleted Dummy Branch
+
+git branch -d dummy-branch
+
+Output:
+
+Deleted branch dummy-branch
+
+<img width="730" height="623" alt="image" src="https://github.com/user-attachments/assets/e84a24b3-8b48-45c0-a92d-3bf41c620100" />
+
+<img width="992" height="496" alt="image" src="https://github.com/user-attachments/assets/939dea46-bfe8-4010-ae57-899be1a99a24" />
 
 
 
 # Conclusion
 
-Successfully:
-- Modified project files
-- Checked file changes
-- Staged changes
-- Created multiple commits
-- Viewed detailed and compact commit history
+Successfully completed Git branching and feature development workflow using:
 
-<img width="776" height="618" alt="image" src="https://github.com/user-attachments/assets/f2d8aaa2-475b-4338-8c82-5844c1548b4c" />
+- Branch creation
+- Branch switching
+- Feature development
+- Commit management
+- Branch merging
+- Branch deletion
+- Git history verification
 
-<img width="569" height="102" alt="image" src="https://github.com/user-attachments/assets/e4ffe105-cf95-49f9-b12f-f3558f8662f3" />
-
-<img width="1365" height="668" alt="image" src="https://github.com/user-attachments/assets/10e5b728-8cb5-4874-ab3a-a4501069c5df" />
-
+<img width="1331" height="671" alt="image" src="https://github.com/user-attachments/assets/bfe33318-bfa0-4476-9f38-239e3e40bc9e" />
 
